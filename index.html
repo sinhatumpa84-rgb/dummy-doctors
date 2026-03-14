@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find a Doctor</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="doctor-container">
+
+<h2>Find a Doctor</h2>
+
+<input type="text" id="search" placeholder="Search by name or specialization...">
+
+<div id="doctorList"></div>
+
+</div>
+
+
+<!-- Report Upload Modal -->
+
+<div id="reportModal" class="modal">
+
+<div class="modal-content">
+
+<h3>Send Medical Report</h3>
+
+<input type="file" id="reportFile">
+
+<br><br>
+
+<button class="send-btn" onclick="sendToAI()">Send</button>
+<button onclick="closeModal()">Cancel</button>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
