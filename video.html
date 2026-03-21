@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video Call</title>
+
+<style>
+body{
+background:#020617;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+}
+
+.video-box{
+width:600px;
+height:350px;
+background:black;
+border-radius:12px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:20px;
+}
+
+button{
+margin-top:20px;
+padding:10px 20px;
+background:red;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Doctor Video Consultation</h2>
+
+<div class="video-box">
+📹 Video Call (Dummy)
+</div>
+
+<button onclick="endCall()">End Call</button>
+
+<script>
+function endCall(){
+    window.location.href = "index.html"
+}
+</script>
+
+</body>
+</html>

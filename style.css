@@ -7,21 +7,18 @@ padding:40px;
 }
 
 /* Container */
-
 .doctor-container{
 max-width:1000px;
 margin:auto;
 }
 
 /* Title */
-
 h2{
 font-size:28px;
 margin-bottom:20px;
 }
 
 /* Search bar */
-
 #search{
 width:100%;
 padding:14px;
@@ -39,7 +36,6 @@ box-shadow:0 0 10px rgba(0,255,170,0.4);
 }
 
 /* Doctor card */
-
 .doctor-card{
 background:#071423;
 border-radius:16px;
@@ -52,37 +48,28 @@ border:1px solid rgba(0,255,170,0.08);
 transition:0.3s;
 }
 
-/* Green glow on hover */
-
 .doctor-card:hover{
 border:1px solid rgba(0,255,170,0.4);
 box-shadow:0 0 20px rgba(0,255,170,0.15);
 }
 
 /* Left side */
-
 .doc-info{
 display:flex;
 align-items:center;
 gap:15px;
 }
 
-/* Avatar */
-
+/* Avatar (FIXED single version) */
 .avatar{
-width:44px;
-height:44px;
+width:48px;
+height:48px;
 border-radius:50%;
-background:linear-gradient(135deg,#00f5a0,#00c6ff);
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:600;
-color:#02111b;
+object-fit:cover;
+border:2px solid rgba(0,255,170,0.4);
 }
 
-/* Doctor name */
-
+/* Doctor text */
 .doc-info h3{
 margin:0;
 font-size:16px;
@@ -94,15 +81,7 @@ color:#9ca3af;
 font-size:13px;
 }
 
-/* Rating */
-
-.rating{
-color:#facc15;
-font-size:13px;
-}
-
 /* Status */
-
 .status{
 padding:4px 10px;
 border-radius:20px;
@@ -121,7 +100,6 @@ color:#aaa;
 }
 
 /* Buttons */
-
 button{
 border:none;
 padding:8px 14px;
@@ -141,13 +119,8 @@ background:linear-gradient(90deg,#00f5a0,#00c6ff);
 color:#02111b;
 font-weight:600;
 }
-.avatar{
-width:48px;
-height:48px;
-border-radius:50%;
-object-fit:cover;
-border:2px solid rgba(0,255,170,0.4);
-}
+
+/* Modal */
 .modal{
 position:fixed;
 top:0;
@@ -168,13 +141,6 @@ text-align:center;
 border:1px solid rgba(0,255,170,0.2);
 }
 
-.result-box{
-margin-top:20px;
-padding:20px;
-background:#071423;
-border-radius:10px;
-border:1px solid rgba(0,255,170,0.2);
-}
 .send-btn{
 background:linear-gradient(90deg,#00f5a0,#00c6ff);
 color:#02111b;
@@ -183,4 +149,23 @@ padding:10px 18px;
 border-radius:8px;
 font-weight:600;
 cursor:pointer;
+}
+
+/* Booking dropdown */
+.dropdown{
+margin-top:10px;
+}
+
+.dropdown select{
+padding:6px;
+border-radius:6px;
+background:#08121f;
+color:white;
+border:1px solid rgba(0,255,170,0.3);
+}
+
+.dropdown button{
+margin-top:6px;
+background:#00c6ff;
+color:#02111b;
 }

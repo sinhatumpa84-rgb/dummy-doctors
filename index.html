@@ -6,40 +6,31 @@
 <title>Find a Doctor</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
 <div class="doctor-container">
+    <h2>Find a Doctor</h2>
 
-<h2>Find a Doctor</h2>
+    <input type="text" id="search" placeholder="Search by name or specialization...">
 
-<input type="text" id="search" placeholder="Search by name or specialization...">
-
-<div id="doctorList"></div>
-
+    <div id="doctorList"></div>
 </div>
-
 
 <!-- Report Upload Modal -->
-
 <div id="reportModal" class="modal">
+    <div class="modal-content">
+        <h3>Send Medical Report</h3>
 
-<div class="modal-content">
+        <input type="file" id="reportFile">
 
-<h3>Send Medical Report</h3>
+        <br><br>
 
-<input type="file" id="reportFile">
-
-<br><br>
-
-<button class="send-btn" onclick="sendToAI()">Send</button>
-<button onclick="closeModal()">Cancel</button>
-
+        <button class="send-btn" onclick="sendToAI()">Send</button>
+        <button onclick="closeModal()">Cancel</button>
+    </div>
 </div>
-
-</div>
-
 
 <script src="script.js"></script>
 
